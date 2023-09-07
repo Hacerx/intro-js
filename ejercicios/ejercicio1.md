@@ -30,3 +30,7 @@ calcularPrecio(10, 0, 10, 0); // 0€
 - Puedes usar la función `Math.ceil()` para redondear un número hacia arriba.
 - Puedes usar la función `Math.floor()` para redondear un número hacia abajo.
 - Una hora tiene 60 minutos.
+
+# Adicional
+---
+- Una vez se calcule el precio mostrar por pantalla una cadena de texto con el siguiente formato: `El precio de la estancia es de X€`.
