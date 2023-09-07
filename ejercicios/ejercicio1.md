@@ -8,6 +8,9 @@ Eres el propietario de un parking y necesitas crear un sistema capaz de calcular
 - No se tendrá en cuenta que el usuario introduzca una hora de salida anterior a la de entrada.
 - No se tendrá en cuenta que el usuario introduzca una hora de entrada/salida que no existe (Ej: 25:00:00).
 - No se tendrá en cuenta que el usuario introduzca una hora de entrada/salida con un formato incorrecto (Ej: 25:00:00).
+- Los parámetros de entrada siempre serán números enteros.
+  - En el caso de las horas se tratará de un número entero entre 0 y 23.
+  - En el caso de los minutos se tratará de un número entero entre 0 y 59.
 
 ## Ejemplo
 ```js
@@ -22,3 +25,8 @@ calcularPrecio(10, 0, 12, 0); // 8€
 calcularPrecio(10, 0, 12, 1); // 12€
 calcularPrecio(10, 0, 10, 0); // 0€
 ```
+
+## Tips
+- Puedes usar la función `Math.ceil()` para redondear un número hacia arriba.
+- Puedes usar la función `Math.floor()` para redondear un número hacia abajo.
+- Una hora tiene 60 minutos.
